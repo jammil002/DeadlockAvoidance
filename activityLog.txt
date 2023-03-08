@@ -1,0 +1,5 @@
+Process 1 acquired resource
+Process 2 is waiting for resource
+Process 1 released resource
+Process 2 acquired resource
+Process 2 released resource
