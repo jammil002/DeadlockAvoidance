@@ -33,10 +33,12 @@ void *process(void *arg)
         {
             resource = id;
             fprintf(activityFile, "Process %d acquired resource\n", id);
+            printf("ProcessID: %d | ResourceID: %d\n", id, id);
         }
         else
         {
             fprintf(activityFile, "Process %d is waiting for resource\n", id);
+            printf("ProcessID: %d | ResourceID: %d\n", id, id);
             pthread_mutex_unlock(&mutex);
             sleep(rand_r(&seed) % RESOURCE_MAX_WAIT_TIME + 1);
             continue;
@@ -51,6 +53,7 @@ void *process(void *arg)
         resource = 0;
 
         fprintf(activityFile, "Process %d released resource\n", id);
+        printf("ProcessID: %d | ResourceID: %d\n", id, id);
         pthread_mutex_unlock(&mutex);
 
         // check exit condition

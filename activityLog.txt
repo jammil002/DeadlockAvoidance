@@ -3,3 +3,25 @@ Process 2 is waiting for resource
 Process 1 released resource
 Process 2 acquired resource
 Process 2 released resource
+Process 1 acquired resource
+Process 2 is waiting for resource
+Process 3 is waiting for resource
+Process 3 is waiting for resource
+Process 1 released resource
+Process 2 acquired resource
+Process 3 is waiting for resource
+Process 2 released resource
+Process 3 acquired resource
+Process 3 released resource
+Process 1 acquired resource
+Process 2 is waiting for resource
+Process 3 is waiting for resource
+Process 2 is waiting for resource
+Process 3 is waiting for resource
+Process 2 is waiting for resource
+Process 1 released resource
+Process 3 acquired resource
+Process 2 is waiting for resource
+Process 3 released resource
+Process 2 acquired resource
+Process 2 released resource
